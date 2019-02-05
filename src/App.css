@@ -1,32 +1,73 @@
-.App {
-  text-align: center;
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #33ccff9c 0%,#c2e9fb 100%);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Header {
+  font-family: 'Courgette', cursive;
+  font-size : 3rem ;
+  padding: 0.5rem;
+  background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
   color: white;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.Container{
+  margin: 0 auto;
+  width:70vw;
+  height: 80vh;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Calculator{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 4px sold green;
 }
+
+
+.Display{
+  margin-top: 4rem;
+  display: grid;
+  justify-content: flex-end;
+  align-self:baseline;
+  padding: 0.5rem  0.8rem 0rem 0.3rem;
+  background: blueviolet;
+  color: chocolate;
+  font-size: 1.4rem;
+  height: 40px;
+  overflow: hidden;
+}
+
+
+.Buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+.Button{
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem;
+  color: white;
+  border: 1px solid  gray;
+  opacity: 0.9;
+  transition: all 0.5s ease;
+}
+
+.Button:hover{
+ opacity: 1;
+ color: greenyellow
+}
+
